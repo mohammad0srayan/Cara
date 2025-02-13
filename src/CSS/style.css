@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    --color-Binery: #e3e6f3a4;
+    --color-btm: #74A9AB;
+    --color-main: #E3E6F3;
+    --color-h2: #000000d5;
+    --color-p: #00000088;
+    --color-span: #128377;
+    --color-btn: #CCB7A2;
+    --color-s: #F4E1F4;
+    --color-order: #CAEBC2;
+    --color-save: #D5E6EF;
+    --color-shopping: #D1D5F0;
+    --color-last: #f3eee6;
+    --color-icon: rgb(255, 174, 0);
+    --color-ftr-icon: #2b805b42;
+}
+
+.custom-grid {
+    @apply grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5rem 2.5rem;
+  }
+
+
+* {
+    font-family: sans-serif;
+}

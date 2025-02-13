@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="website icon" href="assets/logo-Ba9hdOgW.png" type="png">
+  <title>Super value deals On all products</title>
+
+  <style type="text/tailwindcss">
+    @import "tailwindcss";
+
+@theme {
+    --color-Binery: #e3e6f3a4;
+    --color-btm: #74A9AB;
+    --color-main: #E3E6F3;
+    --color-h2: #000000d5;
+    --color-p: #00000088;
+    --color-span: #128377;
+    --color-btn: #CCB7A2;
+    --color-s: #F4E1F4;
+    --color-order: #CAEBC2;
+    --color-save: #D5E6EF;
+    --color-shopping: #D1D5F0;
+    --color-last: #f3eee6;
+    --color-icon: rgb(255, 174, 0);
+    --color-ftr-icon: #2b805b42;
+    --color-b: #ffffffb7;
+    --color-iconftr: #A3CBC2;
+}
+
+.custom-grid {
+    @apply grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem 0;
+  }
+
+  @layer utilities {
+  .filter-sepia-custom {
+    filter: invert(37%) sepia(39%) saturate(368%) hue-rotate(231deg) brightness(100%) contrast(91%);
+  }
+}
+
+  .custom-grid-banner {
+    @apply grid;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+
+* {
+    font-family: sans-serif;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ nav {
+  left: 0 !important;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #13eee3;
+}
+
+::-webkit-scrollbar-track{
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+  <header
+    class="py-5 min-[600px]:px-20 max-[600px]:px-8  flex justify-between items-center bg-Binery w-full backdrop:backdrop-blur-2xl z-50 shadow-lg p-4 fixed max-[900px]:flex-row-reverse">
+    <div class=" w-[150px]">
+      <img class="w-full relative left-10" src="assets/logo-Ba9hdOgW.png" alt="">
+    </div>
+    <nav>
+      <ul class="flex max-[900px]:hidden">
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="index.html">Home</a></li>
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="Shop.html">Shop</a></li>
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="Blog.html">Blog</a></li>
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="#">About</a></li>
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="Contact.html">Contact</a></li>
+        <li><a
+            class="my-0 mx-5 text-black text-lg transition-all duration-400 ease-in-out hover:p-[5px] hover:text-btm hover:border-b-2"
+            href="#"><ion-icon name="card-outline"></ion-icon></a></li>
+      </ul>
+    </nav>
+    <!-- sidebar website -->
+    <div class="fixed h-screen top-0 left-0 min-[900px]:hidden max-[900px]:flex ">
+      <div class="flex relative">
+          <input type="checkbox" id="toggle">
+          <label class="z-50 cursor-pointer text-2xl h-full text-center text-black w-[50px] transition-all ease-in-out duration-500 hover:bg-white hover:text-black leading-[60px]" for="toggle">&#9776;</label>
+          <nav class="absolute top-0 -left-96 h-full bg-white overflow-hidden transition-all duration-500 ease pl-10">
+            <div class=" w-[200px] p-4 px-6">
+              <img class="w-full filter-sepia-custom" src="assets/logo-Ba9hdOgW.png" alt="">
+            </div>
+              <ul class="p-2">
+                  <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="index.html"><ion-icon class="px-2" name="home"></ion-icon> Home</a></li>
+                  <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Shop.html"><ion-icon class="px-2" name="bag-handle"></ion-icon> Shop</a></li>
+                  <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Blog.html"><ion-icon class="px-2" name="cart"></ion-icon> Blog</a></li>
+                  <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="about.html"><ion-icon class="px-2" name="mail"></ion-icon> About</a></li>
+                  <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Contact.html"><ion-icon class="px-2" name="send"></ion-icon> Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+  </header>
+
+  <section class="flex justify-center items-center text-center bg-[url(src/Assets/about/banner.png)] h-[200px]">
+    <div class="">
+      <h2 class="text-white text-5xl font-semibold">#KnowUs</h2>
+      <p class="text-white text-base tracking-wider">Save more with coupons & up to 7</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-6 px-5">
+    <div class="flex justify-center items-center gap-8 max-[900px]:flex-col">
+      <div class="w-[550px] h-[300px] max-[600px]:w-[450px] max-[450px]:w-[340px]">
+        <img class="w-full h-full object-cover" src="src/Assets/about/a6.jpg" alt="">
+      </div>
+      <div class="relative">
+        <h1 class="text-black font-semibold text-5xl">Who We Are?</h1>
+        <p class="text-p mt-4 min-[450px]:w-[450px] max-[450px]:340px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio aut veritatis esse asperiores. Impedit, quae dolorem veritatis eius laboriosam dolore aliquam praesentium quaerat nobis exercitationem nulla quis? Aliquam, at?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 min-[450px]:px-10 max-[450px]:px-0 h-max">
+    <h2 class="text-center font-bold text-5xl">About Us</h2>
+    <div class="py-5 grid custom-grid">
+      <div class="py-2 px-4 h-[180px] min-[400px]:w-max bg-cyan-200 rounded-md max-[400px]:w-[340px]">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="py-2 px-4 h-[180px] w-max bg-cyan-300 rounded-md">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="py-2 px-4 h-[180px] w-max bg-cyan-400 rounded-md">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="py-2 px-4 h-[180px] w-max bg-cyan-500 rounded-md">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="py-2 px-4 h-[180px] w-max bg-cyan-600 rounded-md">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="py-2 px-4 h-[180px] w-max bg-cyan-700 rounded-md">
+        <h2 class="text-black text-xl flex justify-start items-center"><a class="text-2xl text-black relative top-0.5 right-0.5" href="#"><ion-icon name="logo-github"></ion-icon></a>Github</h2>
+        <p class="text-p text-base w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti perferendis amet eligendi, ratione iusto asperiores!</p>
+        <div class="mt-4">
+          <a class="py-2 px-5 bg-black text-white rounded-2xl" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 bg-Binery">
+    <div
+      class="flex min-[601px]:justify-center align-baseline gap-[5rem] flex-wrap max-[600px]:justify-start max-[600px]:px-5">
+      <div class="h-max">
+        <div class=" w-[150px]">
+          <img class="w-full" src="src/Assets/logo.png" alt="">
+        </div>
+        <div class="mt-5">
+          <h2 class="text-black font-semibold">Contact</h2>
+          <p class="mt-3 font-semibold text-h2">Address: <span class="text-p font-medium">562 Wellington Road. Street 32
+              San Francisco</span></p>
+          <p class="font-semibold text-h2">Phon: <span class="text-p font-medium">+01 2222 365/(+91)01 2345 6789</span>
+          </p>
+          <p class="font-semibold text-h2">Hours: <span class="text-p font-medium">10:00 - 18:00. Mon - Sat</span></p>
+          <div class="mt-4">
+            <a class="font-bold" href="#">Follow Us</a>
+            <div class="mt-5 flex justify-start items-center gap-2">
+              <a class="text-2xl text-h2" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a class="text-2xl text-h2" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a class="text-2xl text-h2" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a class="text-2xl text-h2" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a class="text-2xl text-h2" href="#"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-semibold">About</h2>
+        <ul class="mt-4">
+          <li><a class="text-p" href="#">About Us</a></li>
+          <li><a class="text-p" href="#">Delivery</a></li>
+          <li><a class="text-p" href="#">Privacy Policy</a></li>
+          <li><a class="text-p" href="#">Terms & Conditions</a></li>
+          <li><a class="text-p" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold">My Account</h2>
+        <ul class="mt-4">
+          <li><a class="text-p" href="#">Sign in</a></li>
+          <li><a class="text-p" href="#">View Cart</a></li>
+          <li><a class="text-p" href="#">My Wishlits</a></li>
+          <li><a class="text-p" href="#">Track My Order</a></li>
+          <li><a class="text-p" href="#">Help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold">Install App</h2>
+        <p href="#" class="mt-2 text-p">From App Store or Google Play</p>
+        <div class="mt-4 flex">
+          <a class="text-black border-iconftr border-3 rounded-md px-5 py-1 flex justify-center items-center text-sm align-baseline"
+            href="#"><ion-icon class="mr-1 text-span text-[2rem]" name="logo-apple"></ion-icon>Download On the<br>App
+            Store
+          </a>
+          <a class="mx-1 text-black border-iconftr border-3 rounded-md px-5 py-1 flex justify-center items-center text-sm"
+            href="#"><ion-icon class="text-2xl mr-2 text-span" name="logo-google-playstore"></ion-icon>Google Play
+          </a>
+        </div>
+        <p href="#" class="mt-4 text-p">Secured Payment Gate ways</p>
+        <div class="mt-5 flex justify-start items-center gap-2">
+          <a class="text-2xl text-span" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a class="text-2xl text-span" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a class="text-2xl text-span" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          <a class="text-2xl text-span" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="text-2xl text-span" href="#"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 flex w-full justify-center items-center">
+      <p class="text-p tracking-tighter">@ 2025 Tech etc - HTML CSS Tailwinds Ecommerce Template</p>
+    </div>
+  </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>A safe payment gateway for you, dear customers</title>
+    <link rel="website icon" href="assets/logo-Ba9hdOgW.png" type="png">
+
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+  
+  @theme {
+      --color-Binery: #e3e6f3a4;
+      --color-btm: #74A9AB;
+      --color-main: #E3E6F3;
+      --color-h2: #000000d5;
+      --color-p: #00000088;
+      --color-span: #128377;
+      --color-btn: #CCB7A2;
+      --color-s: #F4E1F4;
+      --color-order: #CAEBC2;
+      --color-save: #D5E6EF;
+      --color-shopping: #D1D5F0;
+      --color-last: #f3eee6;
+      --color-icon: rgb(255, 174, 0);
+      --color-ftr-icon: #2b805b42;
+      --color-b: #ffffffb7;
+      --color-iconftr: #A3CBC2;
+      --color-payment: #eee;
+  }
+  
+  .custom-grid {
+      @apply grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 2rem 0;
+    }
+  
+    .custom-grid-banner {
+      @apply grid;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+  
+  * {
+      font-family: sans-serif;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 10px;
+    background: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #13eee3;
+  }
+  
+  ::-webkit-scrollbar-track{
+    width: 100%;
+  }
+  
+  </style>
+</head>
+
+<body>
+
+    <section class="flex flex-col justify-center items-center h-[100vh] bg-white">
+        <h2 class="font-bold text-xl relative bottom-10">Payment Gateway Integration Methods</h2>
+        <div class="justify-start items-start py-5 px-5 bg-payment w-[60%] h-max shadow-xl border-1 rounded-xl">
+            <h2 class="font-extrabold text-base">PAYMENT METHOD</h2>
+            <div class="mt-4 py-3 px-4 bg-white border-2 w-[100%] h-max">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <h2 class="font-semibold text-xl">CREDIT / DEBIT CARD</h2>
+                    </div>
+                    <div class="flex justify-start items-center gap-2">
+                        <a class="text-2xl" href="#"><img class="w-[60px] h-[40px] object-cover" src="src/Assets/payment/visa.png" alt=""></a>
+                        <a class="text-2xl" href="#"><img class="w-[60px] h-[40px] object-cover" src="src/Assets/payment/65272d5e5928b9332593fef3_Payment methods blog 3.jpg" alt=""></a>
+                        <a class="text-2xl" href="#"><img class="w-[60px] h-[40px] object-cover" src="src/Assets/payment/unnamed.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <p class="text-p">
+                        You may be directed to your bank's 3D secure process to authenticate your information.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <form>
+                        <div class="mt-4 relative">
+                        <input type="number" class="py-4 px-5 w-[100%] border-2 text-sm font-semibold" placeholder="0000 0000 0000 0000">
+                        <label class="text-p absolute top-1.5 left-5 text-[0.8rem]">Card number</label>
+                        <img class="w-[40px] h-[30px] object-cover absolute  right-4 top-3.5" src="src/Assets/payment/65272d5e5928b9332593fef3_Payment methods blog 3.jpg" alt="">
+                        </div>
+                        <div class="flex gap-2 mt-3">
+                            <div class="relative w-[100%]">
+                                <label class="text-span text-2xl font-semibold absolute right-4 top-3"><ion-icon name="checkmark"></ion-icon></label>
+                                <input type="datetime" class="py-3 px-5 w-[100%] border-2 text-sm" placeholder="Expiry dote">
+                            </div>
+                            <div class="relative w-[100%]">
+                                <label class="text-span text-2xl font-semibold absolute right-4 top-3"><ion-icon name="checkmark"></ion-icon></label>
+                                <input type="text" class="py-3 px-5 w-[100%] border-2 text-sm" placeholder="CVC / CVV">
+                            </div>
+                        </div>
+                        <div class="flex mt-2 relative">
+                            <label class="text-span text-2xl font-semibold absolute right-4 top-3"><ion-icon name="checkmark"></ion-icon></label>
+                            <input type="text" class="py-3 px-5 w-[100%] border-2 text-sm" placeholder="Name on Card">
+                        </div>
+                        <div class="flex justify-center items-center gap-2 mt-7">
+                            <a class="bg-red-500 py-2 px-6 text-white font-semibold text-base rounded-md" href="Buy.html">Back</a>
+                            <a class="bg-span py-2 px-6 text-white text-base font-semibold rounded-md cursor-pointer" href="Complate.html">Enter</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
+

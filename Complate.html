@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>A safe payment gateway for you, dear customers</title>
+
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+  
+  @theme {
+      --color-Binery: #e3e6f3a4;
+      --color-btm: #74A9AB;
+      --color-main: #E3E6F3;
+      --color-h2: #000000d5;
+      --color-p: #00000088;
+      --color-span: #128377;
+      --color-btn: #CCB7A2;
+      --color-s: #F4E1F4;
+      --color-order: #CAEBC2;
+      --color-save: #D5E6EF;
+      --color-shopping: #D1D5F0;
+      --color-last: #f3eee6;
+      --color-icon: rgb(255, 174, 0);
+      --color-ftr-icon: #2b805b42;
+      --color-b: #ffffffb7;
+      --color-iconftr: #A3CBC2;
+      --color-payment: #eee;
+  }
+  
+  .custom-grid {
+      @apply grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 2rem 0;
+    }
+  
+    .custom-grid-banner {
+      @apply grid;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+  
+  * {
+      font-family: sans-serif;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 10px;
+    background: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #13eee3;
+  }
+  
+  ::-webkit-scrollbar-track{
+    width: 100%;
+  }
+  
+  </style>
+</head>
+
+<body class="relative">
+
+    <div class="flex justify-center items-center absolute left-5 top-5">
+        <a href="Buy.html" class="flex justify-center items-center rounded-full h-[50px] w-[50px] bg-red-500 text-white text-3xl"><ion-icon name="arrow-back-outline"></ion-icon></a>
+    </div>
+
+    <section class="bg-black h-[100vh] flex justify-center items-center">
+        <div class="text-center">
+            <div class="flex justify-center items-center">
+                <a href="#" class="flex justify-center items-center rounded-full h-[100px] w-[100px] bg-span text-white text-6xl"><ion-icon name="checkmark"></ion-icon></a>
+            </div>
+            <div class="mt-4">
+                <h2 class="text-white text-3xl font-semibold">Your payment was successful</h2>
+                <p class="text-white mt-3">Thank you for you payment.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

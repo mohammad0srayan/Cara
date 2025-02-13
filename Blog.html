@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="website icon" href="assets/logo-Ba9hdOgW.png" type="png">
+    <title>Super value deals On all products</title>
+
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+@theme {
+    --color-Binery: #e3e6f3a4;
+    --color-btm: #74A9AB;
+    --color-main: #E3E6F3;
+    --color-h2: #000000d5;
+    --color-p: #00000088;
+    --color-span: #128377;
+    --color-btn: #CCB7A2;
+    --color-s: #F4E1F4;
+    --color-order: #CAEBC2;
+    --color-save: #D5E6EF;
+    --color-shopping: #D1D5F0;
+    --color-last: #f3eee6;
+    --color-icon: rgb(255, 174, 0);
+    --color-ftr-icon: #2b805b42;
+    --color-b: #ffffffb7;
+    --color-iconftr: #A3CBC2;
+    --color-headblog: #F3F5F4;
+    --color-btnblog: #FF3B0F;
+    --color-blurcolor: #ffffffaf;
+    --color-true: #00000079;
+    --color-sidebar: rgba(255, 255, 255, 0.521);
+}
+
+.custom-grid {
+    @apply grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5rem 2.5rem;
+  }
+
+  .custom-grid-banner {
+    @apply grid;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  @layer utilities {
+  .filter-sepia-custom {
+    filter: invert(37%) sepia(39%) saturate(368%) hue-rotate(231deg) brightness(100%) contrast(91%);
+  }
+  .filter-sepia-custom-sidebar {
+    filter: invert(37%) sepia(39%) saturate(368%) hue-rotate(231deg) brightness(100%) contrast(91%);
+  }
+  .filter-shop-custom{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(183deg) brightness(100%) contrast(100%);
+  }
+}
+
+* {
+    font-family: sans-serif;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ nav {
+  left: 0 !important;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #13eee3;
+}
+
+::-webkit-scrollbar-track{
+  width: 100%;
+}
+
+</style>
+
+<body>
+    <header class="min-[750px]:bg-white max-[780px]:pt-5 max-[780px]:px-5 sticky top-0 left-0 w-full z-50">
+    <!-- sidebar -->
+    <div class="fixed h-screen top-0 left-0 min-[900px]:hidden max-[900px]:flex ">
+        <div class="flex relative">
+            <input type="checkbox" id="toggle">
+            <label class="z-50 cursor-pointer text-2xl h-full text-center text-black w-[50px] transition-all ease-in-out duration-500 hover:bg-white hover:text-black leading-[60px]" for="toggle">&#9776;</label>
+            <nav class="absolute top-0 -left-110 h-full bg-white overflow-hidden transition-all duration-500 ease pl-10">
+                <div class="flex flex-col">
+                    <div class=" w-[200px] p-4 px-6">
+                        <img class="w-full filter-sepia-custom" src="assets/logo-Ba9hdOgW.png" alt="">
+                      </div>
+                        <ul class="p-2">
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="index.html"><ion-icon class="px-2" name="home"></ion-icon> Home</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Shop.html"><ion-icon class="px-2" name="bag-handle"></ion-icon> Shop</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Blog.html"><ion-icon class="px-2" name="cart"></ion-icon> Blog</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="about.html"><ion-icon class="px-2" name="mail"></ion-icon> About</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Contact.html"><ion-icon class="px-2" name="send"></ion-icon> Contact</a></li>
+                        </ul>
+                        <div class="px-5 flex justify-center items-center gap-[-5px]">
+                            <form class="flex justify-center items-center">
+                                <div class="flex justify-center items-center">
+                                    <input
+                                        class="py-1.5 px-4 text-black border-2 border-true rounded-md rounded-r-none overflow-hidden min-[800px]:w-[350px] max-[800px]:w-[200px]"
+                                        type="search" placeholder="Search for Products">
+                                    <input
+                                        class="py-1.5 px-4 text-white bg-btnblog border-btnblog border-2 rounded-md rounded-l-none"
+                                        type="submit" value="Search">
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="p-2">
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="index.html"><ion-icon class="px-2" name="home"></ion-icon> Home</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Shop.html"><ion-icon class="px-2" name="bag-handle"></ion-icon> Shop</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Blog.html"><ion-icon class="px-2" name="cart"></ion-icon> Blog</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="about.html"><ion-icon class="px-2" name="mail"></ion-icon> About</a></li>
+                            <li><a class="flex items-center text-base text-black py-3 px-3 transition-all ease-in-out duration-300 hover:bg-black hover:backdrop:blur-[10px] font-semibold" href="Contact.html"><ion-icon class="px-2" name="send"></ion-icon> Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+        <div class="px-10 py-3 min-[800px]:flex justify-between items-center bg-headblog max-[800px]:hidden">
+            <div class="flex justify-center items-center text-black">
+                <p class="text-p">Welcome to Souq commerce Store !</p>
+            </div>
+            <ul class="flex">
+                <li><a class="text-p mx-1 flex" href="#"><img class="w-[20px] mx-1 relative bottom-0.5"
+                            src="src/Assets/icon/MaterialSymbolsAddLocation.svg" alt="">Store Location |</a></li>
+                <li><a class="text-p mx-1 flex" href="#"><img class="w-[20px] mx-1 relative bottom-0.5"
+                            src="src/Assets/icon/MaterialSymbolsHeadphones.svg" alt="">Help Center |</a></li>
+                <li><a class="text-p mx-1 flex" href="#"><img class="w-[20px] mx-1 relative bottom-0.5"
+                            src="src/Assets/icon/MaterialSymbolsPictureInPictureMobileOutlineSharp.svg" alt="">Download
+                        App</a></li>
+            </ul>
+        </div>
+        <div class="py-3 px-0 min-[750px]:flex justify-around items-center max-[780px]:hidden">
+            <div class="flex justify-center items-center">
+                <img class="min-[900px]:w-[80px] mr-5 filter-sepia-custom max-[900px]:w-[50px]"
+                    src="src/Assets/icon/RiShoppingCartFill.png" alt="">
+                <h2 class="min-[900px]:text-3xl font-semibold max-[900px]:text-xl">Souq Store</h2>
+            </div>
+            <div class="px-5 flex justify-center items-center gap-[-5px]">
+                <form class="flex justify-center items-center">
+                    <div class="flex justify-center items-center">
+                        <input
+                            class="py-1.5 px-4 text-black border-2 border-true rounded-md rounded-r-none overflow-hidden min-[800px]:w-[350px] max-[800px]:w-[250px]"
+                            type="search" placeholder="Search for Products">
+                        <input
+                            class="py-1.5 px-4 text-white bg-btnblog border-btnblog border-2 rounded-md rounded-l-none "
+                            type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="flex items-center gap-2">
+                <h2 class="text-btnblog font-semibold">My Wishlist</h2>
+                <div class="mx-1 relative">
+                    <a class="flex justify-center items-center py-2.5 px-3 bg-btnblog" href="#"><img
+                            class="flex justify-center items-center w-[20px] filter-shop-custom"
+                            src="src/Assets/icon/RiShoppingCartFill.svg" alt=""></a>
+                    <a class="flex justify-center items-center py-0.5 px-2 bg-p text-white rounded-full text-sm absolute top-[-0.5rem] right-[-0.5rem]"
+                        href="#">0</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-btnblog py-4 px-16 max-[780px]:hidden">
+            <ul class="min-[780px]:flex max-[900px]:justify-center max-[780px]:hidden">
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="index.html">Home</a>
+                </li>
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="#">Fashion</a></li>
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="#">Post right</a></li>
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="#">Full Width</a></li>
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="#">DOCUMENT</a></li>
+                <li><a class="text-white min-[800px]:text-base mx-5 max-[800px]:text-sm" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="py-5 min-[500px]:px-5 max-[500px]:px-0" dir="rtl">
+        <div class="bg-[url(src/Assets/icon/blogback.jpg)] h-[350px] w-full my-5 bg-cover bg-center bg-no-repeat">
+            <div class="min-[500px]:py-7 px-7 max-[500px]:py-15">
+                <h1 class="text-white min-[500px]:text-5xl max-[500px]:text-3xl">earn qitaf points</h1>
+                <h2 class="tracking-wider min-[500px]:text-3xl text-blurcolor mt-3 max-[500px]:text-xl">when buying from
+                    myStore</h2>
+                <div class="mt-2 flex justify-between items-center">
+                    <button class="py-2 px-2 bg-p text-white flex justify-center items-center text-xl"><a
+                            class="flex justify-center items-center" href="#"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a></button>
+                    <button class="py-2 px-2 bg-p text-white flex justify-center items-center text-xl"><a
+                            class="flex justify-center items-center" href="#"><ion-icon
+                                name="caret-back-outline"></ion-icon></a></button>
+                </div>
+                <div class="mt-5">
+                    <a class="bg-white text-black min-[500px]:text-xl tracking-wide min-[500px]:py-2.5 px-8 rounded-md max-[500px]:text-sm max-[500px]:py-1.5"
+                        href="#">Order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 flex justify-center items-center flex-col gap-15">
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/icon/blogback.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/Blog/b1.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-[85%] max-[500px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/Blog/b2.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/Blog/b3.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/Blog/b4.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-10 max-[1071px]:flex-col max-[500px]:w-full">
+            <div class="min-[900px]:w-[550px] h-[250px] max-[900px]:w-full">
+                <img class="w-full h-full object-cover" src="src/Assets/Blog/b6.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="mb-2 text-xl font-semibold text-black">The Cotton-Jersey Zip-Up Hoodie</h2>
+                <p class="min-[400px]:w-[400px] tracking-wide max-[400px]:w-[340px]">Kickstarter man braid godard coloring book. Raclette Waistcoat
+                    selfies yr wolf chartreuse hexagon irony. godard_</p>
+                <div class="mt-4">
+                    <a class="font-semibold text-[0.9rem]" href="#">CONTINUE READING ______</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-3 flex justify-center items-center w-full">
+        <div class="flex justify-center items-center gap-2 w-full">
+            <a class="border-none px-4 py-3 bg-span text-white rounded-sm flex justify-center items-center"
+                href="#">1</a>
+            <a class="border-none px-4 py-3 bg-span text-white rounded-sm flex justify-center items-center"
+                href="#">2</a>
+            <a class="border-none px-5 py-3.5 bg-span text-white rounded-sm flex justify-center items-center text-xl"
+                href="#"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+    </div>
+
+    <footer class="py-10 bg-Binery">
+        <div
+            class="flex min-[601px]:justify-center align-baseline gap-[5rem] flex-wrap max-[600px]:justify-start max-[600px]:px-5">
+            <div class="h-max">
+                <div class=" w-[150px]">
+                    <img class="w-full" src="src/Assets/logo.png" alt="">
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-black font-semibold">Contact</h2>
+                    <p class="mt-3 font-semibold text-h2">Address: <span class="text-p font-medium">562 Wellington Road.
+                            Street 32
+                            San Francisco</span></p>
+                    <p class="font-semibold text-h2">Phon: <span class="text-p font-medium">+01 2222 365/(+91)01 2345
+                            6789</span>
+                    </p>
+                    <p class="font-semibold text-h2">Hours: <span class="text-p font-medium">10:00 - 18:00. Mon -
+                            Sat</span></p>
+                    <div class="mt-4">
+                        <a class="font-bold" href="#">Follow Us</a>
+                        <div class="mt-5 flex justify-start items-center gap-2">
+                            <a class="text-2xl text-h2" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a class="text-2xl text-h2" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a class="text-2xl text-h2" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a class="text-2xl text-h2" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a class="text-2xl text-h2" href="#"><ion-icon name="logo-github"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-semibold">About</h2>
+                <ul class="mt-4">
+                    <li><a class="text-p" href="#">About Us</a></li>
+                    <li><a class="text-p" href="#">Delivery</a></li>
+                    <li><a class="text-p" href="#">Privacy Policy</a></li>
+                    <li><a class="text-p" href="#">Terms & Conditions</a></li>
+                    <li><a class="text-p" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-semibold">My Account</h2>
+                <ul class="mt-4">
+                    <li><a class="text-p" href="#">Sign in</a></li>
+                    <li><a class="text-p" href="#">View Cart</a></li>
+                    <li><a class="text-p" href="#">My Wishlits</a></li>
+                    <li><a class="text-p" href="#">Track My Order</a></li>
+                    <li><a class="text-p" href="#">Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-semibold">Install App</h2>
+                <p href="#" class="mt-2 text-p">From App Store or Google Play</p>
+                <div class="mt-4 flex">
+                    <a class="text-black border-iconftr border-3 rounded-md px-5 py-1 flex justify-center items-center text-sm align-baseline"
+                        href="#"><ion-icon class="mr-1 text-span text-[2rem]" name="logo-apple"></ion-icon>Download On
+                        the<br>App
+                        Store
+                    </a>
+                    <a class="mx-1 text-black border-iconftr border-3 rounded-md px-5 py-1 flex justify-center items-center text-sm"
+                        href="#"><ion-icon class="text-2xl mr-2 text-span"
+                            name="logo-google-playstore"></ion-icon>Google Play
+                    </a>
+                </div>
+                <p href="#" class="mt-4 text-p">Secured Payment Gate ways</p>
+                <div class="mt-5 flex justify-start items-center gap-2">
+                    <a class="text-2xl text-span" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="text-2xl text-span" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a class="text-2xl text-span" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a class="text-2xl text-span" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a class="text-2xl text-span" href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 flex w-full justify-center items-center">
+            <p class="text-p tracking-tighter">@ 2025 Tech etc - HTML CSS Tailwinds Ecommerce Template</p>
+        </div>
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
